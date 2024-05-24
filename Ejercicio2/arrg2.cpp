@@ -9,12 +9,15 @@ int main() {
     cout << "Indique el numero de columnas\n";
     cin >> c;
 
-    int arr[f][c];
+    int** arr = new int*[f];
+    for (int i = 0; i < f; ++i) {
+        arr[i] = new int[c];
+    }
 
     int valor = 0;
     cout << "Que valores le quiere dar a la matriz\n";
     for(int i = 0; i < f; i++) {
-        for(int j = 0; j < c; i++) {
+        for(int j = 0; j < c; j++) {
             valor++;
             cout << "Valor " << valor << ": ";
             cin >> arr[i][j];
@@ -24,7 +27,7 @@ int main() {
     int multiplicar = 1, sumar = 0;
     for(int i = 0; i < f; i++) {
         for(int j = 0; j < c; j++) {
-            if(arr[i][j] % 2) {
+            if(arr[i][j] % 2 == 0) {
                 sumar += arr[i][j];
             } else {
                 multiplicar *= arr[i][j];
