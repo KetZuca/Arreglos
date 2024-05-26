@@ -1,3 +1,8 @@
+/*
+Escriba un programa que cargue de forma automática un arreglo N*N, pero el tamaño de la matriz debe ser especificada por el usuario y debe ser un número positivo, 
+para los elementos que formen parte de la diagonal secundaria su valor será igual a la suma de sus índices (fila + columna), 
+mientras para para el resto serán igual a cero.
+*/
 #include <iostream>
 using namespace std;
 
