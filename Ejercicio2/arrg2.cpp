@@ -9,7 +9,7 @@ int main() {
     cout << "Indique el numero de columnas\n";
     cin >> c;
 
-    int** arr = new int*[f];
+    int** arr = new int*[f]; //Lo mismo que en el ejercicio 1 pero ahora con una matriz bidimensional
     for (int i = 0; i < f; ++i) {
         arr[i] = new int[c];
     }

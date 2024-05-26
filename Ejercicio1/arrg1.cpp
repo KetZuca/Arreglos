@@ -6,7 +6,7 @@ int main() {
     int t;
     cout << "De que tamano quiere el array\n";
     cin >> t;
-    int* arr = new int[t];
+    int* arr = new int[t]; //Tuve que definirlo de esta manera porque la manera normal int arr[t] no me deja y sale error
 
     for(int i = 0; i < t; i++) {
        arr[i] = i % 2 == 0 ? 0 : 1;
